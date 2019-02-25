@@ -11,7 +11,7 @@ function nowServing(katzDeliLine) {
   } else {
   var firstInLine = katzDeliLine.shift(); // first customer in line removed
   }
-  return `Currently serving ${katzDeliLine.shift()}.`;
+  return `Currently serving ${firstInLine}.`;
 }
 
 // tests for whether there is anybody in line and returns an ordered list of customers in line
